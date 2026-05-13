@@ -11,13 +11,10 @@ export function Footer() {
           © 2024 Made with love & messy sketches
         </div>
         <div className="flex gap-xl">
-          <Link href="#" className="text-text-secondary hover:text-secondary hover:translate-y-[-2px] transition-all duration-300">
-            Twitter
-          </Link>
-          <Link href="#" className="text-text-secondary hover:text-secondary hover:translate-y-[-2px] transition-all duration-300">
+          <Link href="https://github.com/knownasnaffy" target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-secondary hover:translate-y-[-2px] transition-all duration-300">
             GitHub
           </Link>
-          <Link href="#" className="text-text-secondary hover:text-secondary hover:translate-y-[-2px] transition-all duration-300">
+          <Link href="https://www.linkedin.com/in/knownasnaffy/" target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-secondary hover:translate-y-[-2px] transition-all duration-300">
             LinkedIn
           </Link>
         </div>
