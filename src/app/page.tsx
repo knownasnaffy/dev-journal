@@ -30,7 +30,7 @@ export default function Home() {
             <div className="bg-surface-white p-lg shadow-xl rotate-[2deg] hover:rotate-[4deg] transition-transform duration-300 rounded-lg border border-outline-variant peer">
               <img
                 alt="Developer Portrait"
-                className="w-72 h-96 object-cover rounded-sm"
+                className="w-96 h-96 object-cover rounded-sm"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4enoiwb81XlTXdNY2G5Nz6wUJA_URwJpzpYyKZrX2PCLSBLD_GPMkeN-awC3TRhv-6aoVlotbuTAyY-c7lOgqrcDRix59E9JntutGsI0as6gEJAUUKAlTaOUnMCc4BJCERBwSttUJB-BhcehqyJmsj6gOO-TxWmy_Z9wwuUxMbr4QLBUv1mddVqoSYtTn8o2cTG_AUjgVM1FeC0WimtVoTfe_2kzbtuvwNfQajopW6DlK559pYngN77LD7YxxqZl54zoVh1r7cEYB"
               />
               <div className="mt-md font-headline text-center text-subhead text-primary">me sketching ideas, 2024</div>
