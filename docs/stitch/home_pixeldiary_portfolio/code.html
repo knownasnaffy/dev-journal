@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DevJournal | Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&amp;family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&amp;family=Fira+Code:wght@400;500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .scrapbook-rotation-1 { transform: rotate(-1.5deg); }
+        .scrapbook-rotation-2 { transform: rotate(2deg); }
+        .scrapbook-rotation-3 { transform: rotate(-1deg); }
+        .dashed-divider { background-image: linear-gradient(to right, #8b7170 50%, transparent 50%); background-position: bottom; background-size: 8px 1px; background-repeat: repeat-x; }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-on-surface": "#ffedeb",
+                    "surface-raised": "#FFFBEB",
+                    "primary-fixed-dim": "#ffb3b0",
+                    "on-secondary-container": "#524584",
+                    "on-tertiary-fixed": "#002113",
+                    "primary": "#a93539",
+                    "warning": "#F59E0B",
+                    "on-surface": "#241918",
+                    "tertiary-fixed": "#71fbbc",
+                    "on-background": "#241918",
+                    "surface-container-low": "#fff0ef",
+                    "neutral-gray": "#D6D3D1",
+                    "background-warm": "#FFF7ED",
+                    "success": "#16A34A",
+                    "on-error-container": "#93000a",
+                    "surface-container-high": "#fae3e2",
+                    "tertiary-container": "#00b279",
+                    "surface-container-highest": "#f4dddc",
+                    "primary-container": "#f97171",
+                    "surface-bright": "#fff8f7",
+                    "on-tertiary-container": "#003c26",
+                    "primary-fixed": "#ffdad8",
+                    "text-secondary": "#78716C",
+                    "info": "#6366F1",
+                    "surface-container": "#ffe9e7",
+                    "inverse-surface": "#3a2d2d",
+                    "on-secondary-fixed": "#1e0e4e",
+                    "secondary-fixed": "#e7deff",
+                    "secondary": "#625595",
+                    "on-surface-variant": "#574140",
+                    "on-primary-fixed": "#410006",
+                    "text-primary": "#292524",
+                    "surface-white": "#FFFFFF",
+                    "border-subtle": "#F5F5F4",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-container": "#c6b7ff",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed-dim": "#ccbeff",
+                    "on-secondary-fixed-variant": "#4a3d7c",
+                    "surface-tint": "#a93539",
+                    "inverse-primary": "#ffb3b0",
+                    "error": "#EF4444",
+                    "on-tertiary": "#ffffff",
+                    "outline-variant": "#debfbe",
+                    "background": "#fff8f7",
+                    "border-medium": "#E7E5E4",
+                    "surface-dim": "#ebd5d4",
+                    "on-tertiary-fixed-variant": "#005235",
+                    "error-container": "#ffdad6",
+                    "on-secondary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-primary-container": "#6c0513",
+                    "surface": "#fff8f7",
+                    "surface-variant": "#f4dddc",
+                    "tertiary": "#A7F3D0",
+                    "tertiary-fixed-dim": "#51dea1",
+                    "outline": "#8b7170",
+                    "on-primary-fixed-variant": "#881d24"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xs": "4px",
+                    "4xl": "64px",
+                    "base": "8px",
+                    "5xl": "80px",
+                    "md": "12px",
+                    "sm": "8px",
+                    "xl": "24px",
+                    "lg": "16px",
+                    "3xl": "48px",
+                    "2xl": "32px"
+            },
+            "fontFamily": {
+                    "overline": ["dmSans"],
+                    "body-lg": ["dmSans"],
+                    "headline": ["Caveat"],
+                    "body": ["dmSans"],
+                    "body-sm": ["dmSans"],
+                    "display": ["Caveat"],
+                    "caption": ["dmSans"],
+                    "code": ["firaCode"],
+                    "subhead": ["Caveat"]
+            },
+            "fontSize": {
+                    "overline": ["11px", {"lineHeight": "1.5", "letterSpacing": "0.06em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.7", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                    "headline": ["36px", {"lineHeight": "1.2", "letterSpacing": "0", "fontWeight": "700"}],
+                    "body": ["16px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                    "body-sm": ["14px", {"lineHeight": "1.5", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                    "display": ["48px", {"lineHeight": "1.1", "letterSpacing": "0", "fontWeight": "700"}],
+                    "caption": ["12px", {"lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "code": ["14px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                    "subhead": ["28px", {"lineHeight": "1.3", "letterSpacing": "0", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background-warm text-on-surface selection:bg-tertiary selection:text-on-tertiary-container">
+<!-- Top Navigation -->
+<nav class="w-full top-0 px-xl py-lg bg-background dark:bg-background">
+<div class="flex justify-between items-center max-w-7xl mx-auto w-full">
+<div class="font-display text-display text-primary dark:text-primary-fixed-dim rotate-[-2deg] cursor-pointer">DevJournal</div>
+<div class="hidden md:flex gap-xl items-center">
+<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-dashed border-primary dark:border-primary-fixed pb-1 font-headline text-subhead hover:scale-105 hover:rotate-1 transition-transform duration-200" href="#">Projects</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors font-headline text-subhead hover:scale-105 hover:rotate-1 transition-transform duration-200" href="#">About</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors font-headline text-subhead hover:scale-105 hover:rotate-1 transition-transform duration-200" href="#">Notes</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors font-headline text-subhead hover:scale-105 hover:rotate-1 transition-transform duration-200" href="#">Say Hello</a>
+<span class="material-symbols-outlined cursor-pointer text-primary p-xs hover:scale-110 transition-transform">dark_mode</span>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-primary text-3xl">menu</span>
+</div>
+</div>
+</nav>
+<main class="max-w-7xl mx-auto px-xl">
+<!-- Hero Section -->
+<section class="py-5xl flex flex-col md:flex-row items-center gap-4xl">
+<div class="flex-1 space-y-lg">
+<h1 class="font-display text-display text-primary leading-tight">Creating digital spaces <br/><span class="bg-tertiary px-base">with soul and code.</span></h1>
+<p class="font-body text-body-lg text-on-surface-variant max-w-xl">
+                    I'm a full-stack developer who believes websites should feel as personal as a handwritten note. Welcome to my digital journal where I share my messy sketches and polished pixels.
+                </p>
+<div class="pt-lg">
+<button class="bg-primary text-on-primary px-xl py-lg rounded-xl font-bold text-lg hover:translate-y-[-2px] transition-all shadow-md active:scale-95">
+                        Download My Journal (CV)
+                    </button>
+</div>
+</div>
+<div class="flex-shrink-0 relative">
+<div class="bg-surface-white p-lg shadow-xl rotate-[2deg] rounded-sm border border-outline-variant">
+<img alt="Developer Portrait" class="w-72 h-96 object-cover rounded-sm" data-alt="A warm, candid portrait of a professional developer in a bright, sun-drenched studio setting. The subject is wearing a casual cream-colored sweater and has a friendly expression. The photograph has a high-key light-mode aesthetic with soft, natural lighting. The overall visual style is intimate and personal, resembling a high-quality film photograph taped into a physical scrapbook." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4enoiwb81XlTXdNY2G5Nz6wUJA_URwJpzpYyKZrX2PCLSBLD_GPMkeN-awC3TRhv-6aoVlotbuTAyY-c7lOgqrcDRix59E9JntutGsI0as6gEJAUUKAlTaOUnMCc4BJCERBwSttUJB-BhcehqyJmsj6gOO-TxWmy_Z9wwuUxMbr4QLBUv1mddVqoSYtTn8o2cTG_AUjgVM1FeC0WimtVoTfe_2kzbtuvwNfQajopW6DlK559pYngN77LD7YxxqZl54zoVh1r7cEYB"/>
+<div class="mt-md font-headline text-center text-subhead text-primary">me sketching ideas, 2024</div>
+</div>
+<!-- Decorative element -->
+<div class="absolute -top-4 -right-4 w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center -rotate-12 shadow-sm">
+<span class="material-symbols-outlined text-on-secondary-container">auto_awesome</span>
+</div>
+</div>
+</section>
+<!-- About Me & Skills -->
+<section class="py-5xl grid grid-cols-1 lg:grid-cols-2 gap-4xl items-start">
+<div class="space-y-lg">
+<h2 class="font-headline text-display text-secondary">About Me</h2>
+<div class="font-body text-body text-on-surface-variant space-y-md">
+<p>I started my journey with a box of crayons and a curiosity for how things work. Today, those crayons have been replaced by React, Node, and Tailwind, but the spirit remains the same.</p>
+<p>When I'm not debugging, you'll find me at local coffee shops or hiking trails, probably thinking about new ways to make the web feel more human.</p>
+</div>
+</div>
+<div class="bg-surface-raised p-2xl rounded-xl shadow-sm border border-dashed border-outline-variant">
+<h3 class="font-headline text-subhead text-primary mb-lg">The Toolkit</h3>
+<div class="flex flex-wrap gap-md">
+<span class="px-lg py-xs rounded-full bg-secondary-container text-on-secondary-container font-medium text-caption uppercase border border-secondary transition-transform hover:scale-105">React</span>
+<span class="px-lg py-xs rounded-full bg-tertiary-container text-on-tertiary-container font-medium text-caption uppercase border border-tertiary-fixed-dim transition-transform hover:scale-105">TypeScript</span>
+<span class="px-lg py-xs rounded-full bg-primary-container text-on-primary-container font-medium text-caption uppercase border border-primary transition-transform hover:scale-105">Tailwind CSS</span>
+<span class="px-lg py-xs rounded-full bg-secondary-fixed text-on-secondary-fixed font-medium text-caption uppercase border border-secondary-fixed-dim transition-transform hover:scale-105">Node.js</span>
+<span class="px-lg py-xs rounded-full bg-surface-variant text-on-surface-variant font-medium text-caption uppercase border border-outline transition-transform hover:scale-105">Figma</span>
+<span class="px-lg py-xs rounded-full bg-inverse-primary text-on-primary-container font-medium text-caption uppercase border border-primary transition-transform hover:scale-105">GraphQL</span>
+</div>
+</div>
+</section>
+<!-- Projects (Bento Grid) -->
+<section class="py-5xl">
+<h2 class="font-headline text-display text-primary mb-4xl text-center">Featured Projects</h2>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-xl">
+<!-- Project 1 -->
+<div class="md:col-span-8 group bg-surface-white p-lg rounded-xl border border-outline-variant shadow-md hover:shadow-xl transition-all hover:-translate-y-1">
+<div class="relative overflow-hidden rounded-lg aspect-video mb-lg">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-500" data-alt="A professional dashboard UI interface shown on a sleek laptop screen. The design features soft rounded corners, light pastel accents of mint and lavender, and clean data visualizations. The lighting is soft and airy, creating a professional yet warm light-mode atmosphere. The overall style is modern minimalist with a tactile quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJFbGQVqx1xB7G5OOa9_E0Mw11VY1gXT77DN50ICjKbREf2z8bn2bP5hm6a3tXkPwoTAfMPS6Jg1TMycN8YDmZdNMakPgkS2vi6_GJhHu18rEY5gI_qdvmxA6Eqm6yYqEYeKU62TmKAJTxNIsRcpjuAA5urNsqlFqEPXKfynyX-mG5F_-0IQYbf-8W7NW0b8JaW5FvQd-znX_Q87On8A1ikDVbA_P9l_0Z3Y3cX0doS_9lbQKb0AOcmhFn1R6WD4FGBfCPecAu7uF4"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-subhead text-primary">EcoTrack Dashboard</h3>
+<p class="font-body text-body-sm text-text-secondary">A sustainable living companion built with Next.js</p>
+</div>
+<span class="material-symbols-outlined text-primary">arrow_outward</span>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="md:col-span-4 group bg-surface-white p-lg rounded-xl border border-outline-variant shadow-md hover:shadow-xl transition-all hover:-translate-y-1 scrapbook-rotation-3">
+<div class="relative overflow-hidden rounded-lg aspect-square mb-lg">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-500" data-alt="A beautifully designed mobile app interface for a recipe journal. The screen displays a colorful salad recipe with elegant typography and organic-shaped UI buttons. The background is a warm cream color with subtle paper textures. The visual style is playful and handmade, fitting a boutique cookbook aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2Y9oIXxz4MVoQGA_BXK8zf2FXJAN3fpp_BHYsbLrQpHc9uBayZlfBoNKuyFOlvrQtSozqx_Keo0cIBeC-Iro4yv8KlkdmnnDUdPmCVLjF6g-u-gh8jUo6k3Di0lkYkio0Ye3dgDhFHPV79jpAGdexTfreWcnr_3m8C-_4-J71NkK1SwhYdlLAqyrwgZNiJ7fxePYMHk0mL_HHeZL9sFsDYYdpJ0KHU7edtU6f6kqoPNbNM_cLCBUtQuPHvEAxKd3bF7tg9wjwBrtf"/>
+</div>
+<h3 class="font-headline text-subhead text-secondary">Recipe Keeper</h3>
+<p class="font-body text-body-sm text-text-secondary">Mobile-first React Native app.</p>
+</div>
+<!-- Project 3 -->
+<div class="md:col-span-4 group bg-surface-white p-lg rounded-xl border border-outline-variant shadow-md hover:shadow-xl transition-all hover:-translate-y-1 scrapbook-rotation-2">
+<div class="relative overflow-hidden rounded-lg aspect-square mb-lg">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-500" data-alt="An artistic close-up of a code editor window with a colorful 'synthwave' syntax theme. The text on screen is clean and legible Fira Code font. The background of the workspace is messy with sketches and a coffee mug, creating a human and productive developer environment. The light-mode aesthetic is emphasized with warm morning sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLVpLf3Ez1D04oJ7GL_TsWhQqYuZ5NWv1Yba5GLz0whQ5PSHlmR6JW1I-dIpXtmBcCcNxTpgIZqBxjoCO8NCWkUBH0RuAHlmQlV1wKtKqIEie22p_MFHz1ELWAVPBjd3Z9SqTJum23jLnHvoMOOlPLWF2sG9jowIeMDIaSJraAVHeBKcqEFGBJ2gE4z2wxXz7FUpLJQpOTezi9u2LfHF2Xy8GTv184HicfRADR3TjQI0ohtBjtLzCtA2pIzNHoyqNk1W6BQWNq-hip"/>
+</div>
+<h3 class="font-headline text-subhead text-primary">CodeSketch</h3>
+<p class="font-body text-body-sm text-text-secondary">A VS Code theme for dreamers.</p>
+</div>
+<!-- Project 4 -->
+<div class="md:col-span-8 group bg-surface-white p-lg rounded-xl border border-outline-variant shadow-md hover:shadow-xl transition-all hover:-translate-y-1">
+<div class="relative overflow-hidden rounded-lg aspect-video mb-lg">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-500" data-alt="A clean, minimalist web layout showcasing an architecture portfolio. Large, sweeping photography of modern buildings is paired with bold, serif typography. The interface is light and airy with generous whitespace and subtle pastel dividers. The mood is sophisticated and high-end, reflecting professional digital craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALuP0bf88XF1b6uWB864faZJTOX2o31j0opj8DE8rg0Xl_ylYTTXRhxBM_3E3cK1ztYk0VWOOKKsPSGRSRBcL0oxn1864T8SgTPJT6tjR6sBNVKSYo9icotips_NFcL8lxV41iYV5LZUhEFA8SX4bqj_V7KciZGsLpKQEUhiuZ1cI4Vt29RKYWABC4tUF1BdUYo0p5Owl2zYk_54xhNtJkuNyzrwa0AzpGRPBQwrRPl-s8HsRfxSwvx44egzMPN2TjZbZPGLC1h3u0"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-subhead text-secondary">Urban Canvas</h3>
+<p class="font-body text-body-sm text-text-secondary">Portfolio for contemporary architects.</p>
+</div>
+<span class="material-symbols-outlined text-secondary">arrow_outward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience -->
+<section class="py-5xl">
+<h2 class="font-headline text-display text-secondary mb-4xl">Work Experience</h2>
+<div class="space-y-xl">
+<div class="flex flex-col md:flex-row md:items-center gap-base md:gap-xl pb-xl border-b border-dashed border-outline">
+<span class="font-headline text-subhead text-primary min-w-[150px]">2022 — Present</span>
+<div class="flex-1">
+<h4 class="font-bold text-lg text-on-surface">Senior Developer @ Creative Flow</h4>
+<p class="text-on-surface-variant font-body">Leading the frontend transition to React and building scalable design systems for boutique agencies.</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row md:items-center gap-base md:gap-xl pb-xl border-b border-dashed border-outline">
+<span class="font-headline text-subhead text-primary min-w-[150px]">2020 — 2022</span>
+<div class="flex-1">
+<h4 class="font-bold text-lg text-on-surface">Full Stack Engineer @ Pixel &amp; Ink</h4>
+<p class="text-on-surface-variant font-body">Developed custom e-commerce solutions and interactive storytelling components for local businesses.</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row md:items-center gap-base md:gap-xl pb-xl border-b border-dashed border-outline">
+<span class="font-headline text-subhead text-primary min-w-[150px]">2018 — 2020</span>
+<div class="flex-1">
+<h4 class="font-bold text-lg text-on-surface">Junior Developer @ StartUp Nest</h4>
+<p class="text-on-surface-variant font-body">Cut my teeth on Vue.js and Python, helping build the foundation of a community-driven travel platform.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Recent Blog Posts -->
+<section class="py-5xl">
+<div class="flex justify-between items-end mb-4xl">
+<h2 class="font-headline text-display text-primary">From the Journal</h2>
+<a class="text-secondary font-headline text-subhead border-b border-secondary" href="#">View all notes</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-xl">
+<article class="bg-surface-raised p-xl rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-all">
+<div class="text-caption text-secondary font-bold mb-sm">OCT 24, 2023</div>
+<h3 class="font-headline text-subhead text-on-surface mb-md">Why I still carry a physical notebook</h3>
+<p class="font-body text-body-sm text-on-surface-variant mb-lg">Analog tools in a digital world help slow down the thinking process...</p>
+<div class="flex gap-xs items-center text-primary font-bold">
+<span>Read more</span>
+<span class="material-symbols-outlined text-sm">trending_flat</span>
+</div>
+</article>
+<article class="bg-surface-raised p-xl rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-all">
+<div class="text-caption text-secondary font-bold mb-sm">SEP 12, 2023</div>
+<h3 class="font-headline text-subhead text-on-surface mb-md">The beauty of CSS Grid for layouts</h3>
+<p class="font-body text-body-sm text-on-surface-variant mb-lg">Breaking away from standard columns to create something unique...</p>
+<div class="flex gap-xs items-center text-primary font-bold">
+<span>Read more</span>
+<span class="material-symbols-outlined text-sm">trending_flat</span>
+</div>
+</article>
+<article class="bg-surface-raised p-xl rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-all">
+<div class="text-caption text-secondary font-bold mb-sm">AUG 05, 2023</div>
+<h3 class="font-headline text-subhead text-on-surface mb-md">Debugging with a cup of chamomile</h3>
+<p class="font-body text-body-sm text-on-surface-variant mb-lg">A soft approach to solving hard technical problems in the evening...</p>
+<div class="flex gap-xs items-center text-primary font-bold">
+<span>Read more</span>
+<span class="material-symbols-outlined text-sm">trending_flat</span>
+</div>
+</article>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-5xl px-xl py-2xl rounded-t-xl bg-surface-raised dark:bg-inverse-surface border-t border-dashed border-outline-variant dark:border-outline shadow-sm dark:shadow-none">
+<div class="flex flex-col md:flex-row justify-between items-center gap-lg max-w-7xl mx-auto w-full">
+<div class="font-display text-headline text-primary dark:text-primary-fixed">DevJournal</div>
+<div class="font-body text-body-sm dark:text-on-surface-variant text-text-secondary">© 2024 Made with love &amp; messy sketches</div>
+<div class="flex gap-xl">
+<a class="text-text-secondary dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed hover:translate-y-[-2px] transition-all duration-300" href="#">Twitter</a>
+<a class="text-text-secondary dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed hover:translate-y-[-2px] transition-all duration-300" href="#">GitHub</a>
+<a class="text-text-secondary dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed hover:translate-y-[-2px] transition-all duration-300" href="#">LinkedIn</a>
+</div>
+</div>
+</footer>
+</body></html>

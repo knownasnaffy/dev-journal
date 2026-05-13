@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&amp;family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Fira+Code&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-on-surface": "#ffedeb",
+                    "surface-raised": "#FFFBEB",
+                    "primary-fixed-dim": "#ffb3b0",
+                    "on-secondary-container": "#524584",
+                    "on-tertiary-fixed": "#002113",
+                    "primary": "#a93539",
+                    "warning": "#F59E0B",
+                    "on-surface": "#241918",
+                    "tertiary-fixed": "#71fbbc",
+                    "on-background": "#241918",
+                    "surface-container-low": "#fff0ef",
+                    "neutral-gray": "#D6D3D1",
+                    "background-warm": "#FFF7ED",
+                    "success": "#16A34A",
+                    "on-error-container": "#93000a",
+                    "surface-container-high": "#fae3e2",
+                    "tertiary-container": "#00b279",
+                    "surface-container-highest": "#f4dddc",
+                    "primary-container": "#f97171",
+                    "surface-bright": "#fff8f7",
+                    "on-tertiary-container": "#003c26",
+                    "primary-fixed": "#ffdad8",
+                    "text-secondary": "#78716C",
+                    "info": "#6366F1",
+                    "surface-container": "#ffe9e7",
+                    "inverse-surface": "#3a2d2d",
+                    "on-secondary-fixed": "#1e0e4e",
+                    "secondary-fixed": "#e7deff",
+                    "secondary": "#625595",
+                    "on-surface-variant": "#574140",
+                    "on-primary-fixed": "#410006",
+                    "text-primary": "#292524",
+                    "surface-white": "#FFFFFF",
+                    "border-subtle": "#F5F5F4",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-container": "#c6b7ff",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed-dim": "#ccbeff",
+                    "on-secondary-fixed-variant": "#4a3d7c",
+                    "surface-tint": "#a93539",
+                    "inverse-primary": "#ffb3b0",
+                    "error": "#EF4444",
+                    "on-tertiary": "#ffffff",
+                    "outline-variant": "#debfbe",
+                    "background": "#fff8f7",
+                    "border-medium": "#E7E5E4",
+                    "surface-dim": "#ebd5d4",
+                    "on-tertiary-fixed-variant": "#005235",
+                    "error-container": "#ffdad6",
+                    "on-secondary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-primary-container": "#6c0513",
+                    "surface": "#fff8f7",
+                    "surface-variant": "#f4dddc",
+                    "tertiary": "#A7F3D0",
+                    "tertiary-fixed-dim": "#51dea1",
+                    "outline": "#8b7170",
+                    "on-primary-fixed-variant": "#881d24"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xs": "4px",
+                    "4xl": "64px",
+                    "base": "8px",
+                    "5xl": "80px",
+                    "md": "12px",
+                    "sm": "8px",
+                    "xl": "24px",
+                    "lg": "16px",
+                    "3xl": "48px",
+                    "2xl": "32px"
+            },
+            "fontFamily": {
+                    "overline": ["dmSans"],
+                    "body-lg": ["dmSans"],
+                    "headline": ["Caveat"],
+                    "body": ["dmSans"],
+                    "body-sm": ["dmSans"],
+                    "display": ["Caveat"],
+                    "caption": ["dmSans"],
+                    "code": ["firaCode"],
+                    "subhead": ["Caveat"]
+            },
+            "fontSize": {
+                    "overline": ["11px", {"lineHeight": "1.5", "letterSpacing": "0.06em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.7", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                    "headline": ["36px", {"lineHeight": "1.2", "letterSpacing": "0", "fontWeight": "700"}],
+                    "body": ["16px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                    "body-sm": ["14px", {"lineHeight": "1.5", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                    "display": ["48px", {"lineHeight": "1.1", "letterSpacing": "0", "fontWeight": "700"}],
+                    "caption": ["12px", {"lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "code": ["14px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                    "subhead": ["28px", {"lineHeight": "1.3", "letterSpacing": "0", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .paper-shadow {
+            box-shadow: 0 4px 6px -1px rgba(41, 37, 36, 0.08), 0 2px 4px -1px rgba(41, 37, 36, 0.04);
+        }
+        .rotated-left { transform: rotate(-1.5deg); }
+        .rotated-right { transform: rotate(2deg); }
+        .rotated-slight { transform: rotate(0.8deg); }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-secondary-container">
+<!-- Top Navigation -->
+<nav class="w-full top-0 px-xl py-lg bg-background dark:bg-background">
+<div class="flex justify-between items-center max-w-7xl mx-auto w-full">
+<span class="font-display text-display text-primary dark:text-primary-fixed-dim rotate-[-2deg]">DevJournal</span>
+<div class="hidden md:flex items-center gap-xl">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors font-body text-subhead" href="#">Projects</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors font-body text-subhead" href="#">About</a>
+<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-dashed border-primary dark:border-primary-fixed pb-1 font-body text-subhead" href="#">Notes</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors font-body text-subhead" href="#">Say Hello</a>
+</div>
+<div class="flex items-center gap-lg">
+<button class="material-symbols-outlined text-primary dark:text-primary-fixed cursor-pointer active:scale-95 hover:scale-105 hover:rotate-1 transition-transform duration-200">dark_mode</button>
+</div>
+</div>
+</nav>
+<!-- Header Section -->
+<header class="max-w-7xl mx-auto px-xl mt-4xl mb-3xl">
+<div class="flex flex-col gap-sm">
+<h1 class="font-display text-display text-text-primary">Journal Entries</h1>
+<p class="font-body text-body-lg text-text-secondary max-w-2xl">A messy collection of thoughts, snippets, and photos from my desk. Captured exactly as they felt in the moment.</p>
+</div>
+<div class="mt-xl">
+<div class="w-full border-t border-dashed border-outline-variant"></div>
+</div>
+</header>
+<!-- Main Content: Scattered Bento Grid -->
+<main class="max-w-7xl mx-auto px-xl">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3xl">
+<!-- Card 1: Large Featured -->
+<article class="md:col-span-2 lg:col-span-2 bg-surface-raised p-lg rounded-xl paper-shadow rotated-left hover:translate-y-[-2px] hover:shadow-lg transition-all cursor-pointer group">
+<div class="relative overflow-hidden rounded-lg aspect-[16/9] mb-lg">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A warm, top-down view of a designer's wooden desk featuring a high-end laptop, an open sketchbook with hand-drawn diagrams, and a steaming ceramic mug. The lighting is soft morning sunlight, casting gentle shadows across a warm cream-toned paper surface. The overall mood is quiet, productive, and deeply personal, adhering to a tactile scrapbook aesthetic with a pastel coral and muted lavender color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjFVVPIhMac6y4kUI1S9x9LnxBUO7ZvSxZNO50zSxYBXxZMsMS7D7ZWDZsx3zsP-lprebDLKG6nfRGxMQsUhkRDJ5zM0ufXcN4LIsfkz4bxJTU_5D2-rfdsGP0HuGY4tePZsIUnRd17Cv2PsHAFYvwTwmv4u6bH0u-4m9-8lcpLvttUQyUKpZ2eaflBi1_c5LbLjjY-odFW3QASVXin4sFx5sdcq6QFSGRClHJZyHmT3PSlyGY1i7ImqIorhaWmYfTB2SxtbTFLL-t"/>
+<div class="absolute top-md right-md flex gap-sm">
+<span class="px-lg py-xs bg-tertiary rounded-full font-overline text-on-tertiary-container">DESIGN</span>
+<span class="px-lg py-xs bg-secondary-container rounded-full font-overline text-on-secondary-container">PROCESS</span>
+</div>
+</div>
+<div class="px-base">
+<h2 class="font-headline text-display mb-sm group-hover:text-primary transition-colors">Finding focus in the digital noise</h2>
+<p class="font-body text-body text-on-surface-variant mb-lg">Last week I decided to turn off all notifications. It felt like I was back in 2005, just me and my sketchbook. Here's what I learned about the "slow design" movement...</p>
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">calendar_today</span>
+<span class="font-caption text-caption text-text-secondary">October 24, 2024</span>
+</div>
+</div>
+</article>
+<!-- Card 2: Square Sticky Note Style -->
+<article class="bg-surface-raised p-lg rounded-xl paper-shadow rotated-right hover:translate-y-[-2px] transition-all cursor-pointer group flex flex-col justify-between">
+<div>
+<div class="aspect-square relative overflow-hidden rounded-lg mb-lg">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A macro shot of a single vintage Polaroid photo lying on a pale yellow textured paper surface, secured by a strip of translucent mint-colored washi tape. The photograph depicts a peaceful garden scene. The image is bathed in soft, high-key studio lighting that emphasizes the tactile paper grain and subtle drop shadows, following a scrapbook design system with joyful, airy vibes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1k13fuZAHaUBRWNDGtj0XbpE4WOxGmqxnPcc2XuPMOPtdoThg8JTDco8I_yDZtiGrcofZQFYA6yuTVad69_ie27ZMmnkPiBjwS9auq09KDAcsAlWKxLdErhszCPni8JHWTsa87_o1LrbV3CVXDSq1dsLLPxHmu-YYYMbjVYC2Tf5LTWRhGmuXN8juGkNmX6KneVtwYjAJljAmqMqcctdH4DOwIR_aWjCIYS9h20VE2XOiMdUbCjSSklVscbzYOYyZXK93JVWSw-Su"/>
+</div>
+<span class="px-lg py-xs bg-secondary-container rounded-full font-overline text-on-secondary-container mb-sm inline-block">PERSONAL</span>
+<h2 class="font-headline text-headline mb-sm group-hover:text-primary transition-colors">Morning Coffee Rituals</h2>
+<p class="font-body text-body-sm text-on-surface-variant line-clamp-3">There is something sacred about the first 15 minutes of the day before the emails start pouring in.</p>
+</div>
+<div class="mt-lg pt-lg border-t border-dashed border-outline-variant flex justify-between items-center">
+<span class="font-caption text-caption text-text-secondary italic">5 min read</span>
+<span class="material-symbols-outlined text-primary">arrow_forward</span>
+</div>
+</article>
+<!-- Card 3: Minimal Text Focus -->
+<article class="bg-surface-raised p-xl rounded-xl paper-shadow rotated-slight hover:translate-y-[-2px] transition-all cursor-pointer group border-l-[3px] border-primary">
+<div class="flex flex-col gap-lg">
+<span class="px-lg py-xs bg-tertiary rounded-full font-overline text-on-tertiary-container self-start">CODE</span>
+<h2 class="font-headline text-headline group-hover:text-primary transition-colors">The messy reality of CSS Grid layouts</h2>
+<p class="font-body text-body text-on-surface-variant">Tutorials make it look easy, but in production, it's a game of tetris where the blocks are made of jelly. Let's talk about the overflow property and why it's my best friend and worst enemy.</p>
+<div class="bg-surface-container p-md rounded-lg">
+<code class="font-code text-code text-on-surface">grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));</code>
+</div>
+<div class="flex items-center gap-sm mt-base">
+<span class="material-symbols-outlined text-primary">label</span>
+<span class="font-caption text-caption text-text-secondary">Development, UX, Rants</span>
+</div>
+</div>
+</article>
+<!-- Card 4: Medium Horizontal -->
+<article class="md:col-span-2 bg-surface-raised p-lg rounded-xl paper-shadow rotated-left hover:translate-y-[-2px] transition-all cursor-pointer group flex flex-col md:flex-row gap-xl">
+<div class="md:w-1/2 aspect-[4/3] overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An artistic arrangement of vintage stationery, including several nib pens, an ink bottle, and envelopes on a soft lavender background. The composition is airy and minimalist, with soft shadows making the objects look like they are floating slightly above the paper. The scene uses a gentle pastel color palette of lavender, cream, and coral, evoking a handcrafted and nostalgic diary aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs9yTYue2ORyPVW6EooG_CDfsUiVOT2oZ18wdzqy9C19bOxG_RNbhJAAbdeKKjGyPQcqJ3TgnnleyCy1tTYMjkRKkFSr7iHv5Hl0CmKBqFWgEbM52V3wMOyP6l1XftzPuPuePHIY5hhPo4dw4lshgVkm4CMEQQSgJf_iI3ptanefMUewQ42MYWuUCSs_mpk1xvT5yOiAiNfHIHKXxRWF-dBUO23YucXsyw1Zbe0J4hXphTmF54VLizQYQDslz5PK972DAwiL4J4ggz"/>
+</div>
+<div class="md:w-1/2 flex flex-col justify-center">
+<span class="px-lg py-xs bg-secondary-container rounded-full font-overline text-on-secondary-container mb-sm self-start">INSPIRATION</span>
+<h2 class="font-headline text-headline mb-sm group-hover:text-primary transition-colors">Analog Tools for Modern Minds</h2>
+<p class="font-body text-body text-on-surface-variant mb-lg">Why I keep buying fountain pens even though I type 90 words per minute. The tactile feedback is irreplaceable for thinking.</p>
+<div class="flex items-center gap-sm">
+<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container text-[20px]">edit_note</span>
+</div>
+<span class="font-caption text-caption text-text-primary font-bold">Read the Essay</span>
+</div>
+</div>
+</article>
+<!-- Card 5: Tall Vertical -->
+<article class="bg-surface-raised p-lg rounded-xl paper-shadow rotated-right hover:translate-y-[-2px] transition-all cursor-pointer group">
+<div class="aspect-[3/4] overflow-hidden rounded-lg mb-lg bg-surface-container-high flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A collection of colorful, organic-shaped abstract cutouts arranged on a neutral warm gray background. The shapes are in various shades of mint green, soft coral, and pale lavender. The lighting is direct but soft, creating sharp but subtle shadows that give the scene a 3D collage or scrapbook feel. The aesthetic is modern, joyful, and clean, emphasizing a tactile handmade quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDYDDhY9-WxkgdIzOawnC1rjzFkGPRyHWsfXSGousEYKdhngkJj0GWnrB_xVjNTNIhoNWBd9oOZuH72OMnhq5fUHoHuafLIiPOO4SPIp4erostt8qEuNw-d6PAUaWAbigT-aMsDAa4f8w3FjiE5VagXrPoxuUrovd8ooVp3oo2ReVemRdxFao5C17ik9rZuKKv1zg_DdA_dmsYQxotKsC1GwEZbliJrxEYr7aRq3srEeyJe7t6liDTkQoNfOPY3Ra5Tw82AWtdbZWF"/>
+</div>
+<h2 class="font-headline text-headline mb-sm group-hover:text-primary transition-colors">Why "Perfect" is the Enemy</h2>
+<p class="font-body text-body-sm text-on-surface-variant mb-md">Embracing the messy sketches and the half-finished ideas. This blog is a testament to the beauty of the "Work in Progress".</p>
+<div class="flex flex-wrap gap-xs">
+<span class="px-md py-1 bg-surface-container rounded-full text-caption text-on-surface-variant border border-dashed border-outline">#creativity</span>
+<span class="px-md py-1 bg-surface-container rounded-full text-caption text-on-surface-variant border border-dashed border-outline">#growth</span>
+</div>
+</article>
+</div>
+</main>
+<!-- Footer Section -->
+<footer class="w-full mt-5xl px-xl py-2xl rounded-t-xl bg-surface-raised dark:bg-inverse-surface border-t border-dashed border-outline-variant dark:border-outline shadow-sm dark:shadow-none">
+<div class="flex flex-col md:flex-row justify-between items-center gap-lg max-w-7xl mx-auto w-full">
+<div class="flex flex-col gap-xs items-center md:items-start">
+<span class="font-display text-headline text-primary dark:text-primary-fixed">DevJournal</span>
+<p class="font-body text-body-sm dark:text-on-surface-variant text-text-secondary">© 2024 Made with love &amp; messy sketches</p>
+</div>
+<div class="flex gap-xl">
+<a class="text-text-secondary dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-all hover:translate-y-[-2px] font-body text-body-sm" href="#">Twitter</a>
+<a class="text-text-secondary dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-all hover:translate-y-[-2px] font-body text-body-sm" href="#">GitHub</a>
+<a class="text-text-secondary dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-all hover:translate-y-[-2px] font-body text-body-sm" href="#">LinkedIn</a>
+</div>
+</div>
+</footer>
+<!-- FAB for quick action (only shown because contextually it makes sense for a journal to allow new entries) -->
+<button class="fixed bottom-xl right-xl w-14 h-14 bg-primary text-on-primary rounded-full shadow-lg hover:scale-110 active:scale-95 transition-all flex items-center justify-center z-50 paper-shadow">
+<span class="material-symbols-outlined text-[28px]">edit</span>
+</button>
+</body></html>
