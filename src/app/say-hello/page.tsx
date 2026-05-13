@@ -8,7 +8,7 @@ export default function SayHello() {
       <main className="max-w-7xl mx-auto px-xl py-4xl flex-grow">
         <header className="mb-5xl text-center md:text-left">
           <h1 className="font-display text-display text-primary mb-base">Let&apos;s start a conversation.</h1>
-          <p className="font-body-lg text-text-secondary max-w-2xl">Whether you have a project in mind, a question about my process, or just want to share a messy sketch, my inbox is always open.</p>
+          <p className="font-body-lg text-text-secondary">Whether you have a project in mind, a question about my process, or just want to share a messy sketch, my inbox is always open.</p>
         </header>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4xl items-start">
           {/* Contact Form Section */}
@@ -49,7 +49,7 @@ export default function SayHello() {
             {/* Mailing Address Section */}
             <div className="bg-surface-raised rounded-xl p-2xl shadow-[0_4px_12px_rgba(41,37,36,0.08)] scrapbook-rotation-2 border-2 border-dashed border-outline-variant relative overflow-hidden">
               <div className="absolute top-4 right-4">
-                <div className="w-16 h-20 bg-primary-fixed border-2 border-primary rounded-sm flex items-center justify-center text-primary font-display text-subhead opacity-50">STAMP</div>
+                <div className="w-26 h-20 bg-primary-fixed border-2 border-primary rounded-sm flex items-center justify-center text-primary font-display text-subhead opacity-50">STAMP</div>
               </div>
               <h3 className="font-headline text-headline text-secondary mb-xl">The Mailing List</h3>
               <div className="space-y-lg">

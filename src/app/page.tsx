@@ -15,7 +15,7 @@ export default function Home() {
               Creating digital spaces <br />
               <span className="bg-tertiary px-base">with soul and code.</span>
             </h1>
-            <p className="font-body text-body-lg text-on-surface-variant max-w-xl">
+            <p className="font-body text-body-lg text-on-surface-variant">
               I&apos;m a full-stack developer who believes websites should feel as personal as a handwritten note. Welcome to my digital journal where I share my messy sketches and polished pixels.
             </p>
             <div className="pt-lg">
@@ -25,7 +25,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex-shrink-0 relative">
-            <div className="bg-surface-white p-lg shadow-xl rotate-[2deg] rounded-sm border border-outline-variant">
+            <div className="bg-surface-white p-lg shadow-xl rotate-[2deg] hover:rotate-[4deg] transition-transform duration-300 rounded-lg border border-outline-variant peer">
               <img
                 alt="Developer Portrait"
                 className="w-72 h-96 object-cover rounded-sm"
@@ -34,7 +34,7 @@ export default function Home() {
               <div className="mt-md font-headline text-center text-subhead text-primary">me sketching ideas, 2024</div>
             </div>
             {/* Decorative element */}
-            <div className="absolute -top-4 -right-4 w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center -rotate-12 shadow-sm">
+            <div className="absolute -top-4 -right-4 w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center -rotate-12 shadow-sm peer-hover:-right-6 peer-hover:-top-2 transition-all duration-300">
               <span className="material-symbols-outlined text-on-secondary-container">auto_awesome</span>
             </div>
           </div>
@@ -53,7 +53,7 @@ export default function Home() {
             <h3 className="font-headline text-subhead text-primary mb-lg">The Toolkit</h3>
             <div className="flex flex-wrap gap-md">
               <span className="px-lg py-xs rounded-full bg-secondary-container text-on-secondary-container font-medium text-caption uppercase border border-secondary transition-transform hover:scale-105">React</span>
-              <span className="px-lg py-xs rounded-full bg-tertiary-container text-on-tertiary-container font-medium text-caption uppercase border border-tertiary-fixed-dim transition-transform hover:scale-105">TypeScript</span>
+              <span className="px-lg py-xs rounded-full bg-tertiary-fixed-dim text-on-tertiary-container font-medium text-caption uppercase border border-tertiary-container transition-transform hover:scale-105">TypeScript</span>
               <span className="px-lg py-xs rounded-full bg-primary-container text-on-primary-container font-medium text-caption uppercase border border-primary transition-transform hover:scale-105">Tailwind CSS</span>
               <span className="px-lg py-xs rounded-full bg-secondary-fixed text-on-secondary-fixed font-medium text-caption uppercase border border-secondary-fixed-dim transition-transform hover:scale-105">Node.js</span>
               <span className="px-lg py-xs rounded-full bg-surface-variant text-on-surface-variant font-medium text-caption uppercase border border-outline transition-transform hover:scale-105">Figma</span>
