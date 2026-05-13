@@ -51,7 +51,7 @@ export default function Home() {
               <p>When I&apos;m not debugging, you&apos;ll find me at local coffee shops or hiking trails, probably thinking about new ways to make the web feel more human.</p>
             </div>
           </div>
-          <div className="bg-surface-raised p-2xl rounded-xl shadow-sm border border-dashed border-outline-variant">
+          <div className="bg-surface-raised p-2xl rounded-xl shadow-sm border-2 border-dashed border-outline-variant">
             <h3 className="font-headline text-subhead text-primary mb-lg">The Toolkit</h3>
             <div className="flex flex-wrap gap-md">
               <span className="px-lg py-xs rounded-full bg-secondary-container text-on-secondary-container font-medium text-caption uppercase border border-secondary transition-transform hover:scale-105">React</span>
