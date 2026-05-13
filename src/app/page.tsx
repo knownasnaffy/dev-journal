@@ -1,3 +1,5 @@
+"use client";
+
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import Link from 'next/link';
@@ -49,7 +51,7 @@ export default function Home() {
               <p>When I&apos;m not debugging, you&apos;ll find me at local coffee shops or hiking trails, probably thinking about new ways to make the web feel more human.</p>
             </div>
           </div>
-          <div className="bg-surface-raised p-2xl rounded-xl shadow-sm border border-dashed border-outline-variant">
+          <div className="bg-surface-raised p-2xl rounded-xl shadow-sm border-2 border-dashed border-outline-variant">
             <h3 className="font-headline text-subhead text-primary mb-lg">The Toolkit</h3>
             <div className="flex flex-wrap gap-md">
               <span className="px-lg py-xs rounded-full bg-secondary-container text-on-secondary-container font-medium text-caption uppercase border border-secondary transition-transform hover:scale-105">React</span>
@@ -67,7 +69,7 @@ export default function Home() {
           <h2 className="font-headline text-display text-primary mb-4xl text-center">Featured Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-xl">
             {/* Project 1 */}
-            <div className="md:col-span-8 group bg-surface-white p-lg rounded-xl border border-outline-variant shadow-md hover:shadow-xl transition-all hover:-translate-y-1">
+            <div onClick={() => alert('Project coming soon!')} className="cursor-pointer md:col-span-8 group bg-surface-white p-lg rounded-xl border border-outline-variant shadow-md hover:shadow-xl transition-all hover:-translate-y-1">
               <div className="relative overflow-hidden rounded-lg aspect-video mb-lg">
                 <img className="w-full h-full object-cover transition-transform group-hover:scale-105 duration-500" alt="EcoTrack Dashboard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJFbGQVqx1xB7G5OOa9_E0Mw11VY1gXT77DN50ICjKbREf2z8bn2bP5hm6a3tXkPwoTAfMPS6Jg1TMycN8YDmZdNMakPgkS2vi6_GJhHu18rEY5gI_qdvmxA6Eqm6yYqEYeKU62TmKAJTxNIsRcpjuAA5urNsqlFqEPXKfynyX-mG5F_-0IQYbf-8W7NW0b8JaW5FvQd-znX_Q87On8A1ikDVbA_P9l_0Z3Y3cX0doS_9lbQKb0AOcmhFn1R6WD4FGBfCPecAu7uF4" />
                 <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
@@ -82,7 +84,7 @@ export default function Home() {
             </div>
 
             {/* Project 2 */}
-            <div className="md:col-span-4 group bg-surface-white p-lg rounded-xl border border-outline-variant shadow-md hover:shadow-xl transition-all hover:-translate-y-1 scrapbook-rotation-3">
+            <div onClick={() => alert('Project coming soon!')} className="cursor-pointer md:col-span-4 group bg-surface-white p-lg rounded-xl border border-outline-variant shadow-md hover:shadow-xl transition-all hover:-translate-y-1 scrapbook-rotation-3">
               <div className="relative overflow-hidden rounded-lg aspect-square mb-lg">
                 <img className="w-full h-full object-cover transition-transform group-hover:scale-105 duration-500" alt="Recipe Keeper" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2Y9oIXxz4MVoQGA_BXK8zf2FXJAN3fpp_BHYsbLrQpHc9uBayZlfBoNKuyFOlvrQtSozqx_Keo0cIBeC-Iro4yv8KlkdmnnDUdPmCVLjF6g-u-gh8jUo6k3Di0lkYkio0Ye3dgDhFHPV79jpAGdexTfreWcnr_3m8C-_4-J71NkK1SwhYdlLAqyrwgZNiJ7fxePYMHk0mL_HHeZL9sFsDYYdpJ0KHU7edtU6f6kqoPNbNM_cLCBUtQuPHvEAxKd3bF7tg9wjwBrtf" />
               </div>
@@ -91,7 +93,7 @@ export default function Home() {
             </div>
 
             {/* Project 3 */}
-            <div className="md:col-span-4 group bg-surface-white p-lg rounded-xl border border-outline-variant shadow-md hover:shadow-xl transition-all hover:-translate-y-1 scrapbook-rotation-2">
+            <div onClick={() => alert('Project coming soon!')} className="cursor-pointer md:col-span-4 group bg-surface-white p-lg rounded-xl border border-outline-variant shadow-md hover:shadow-xl transition-all hover:-translate-y-1 scrapbook-rotation-2">
               <div className="relative overflow-hidden rounded-lg aspect-square mb-lg">
                 <img className="w-full h-full object-cover transition-transform group-hover:scale-105 duration-500" alt="CodeSketch" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLVpLf3Ez1D04oJ7GL_TsWhQqYuZ5NWv1Yba5GLz0whQ5PSHlmR6JW1I-dIpXtmBcCcNxTpgIZqBxjoCO8NCWkUBH0RuAHlmQlV1wKtKqIEie22p_MFHz1ELWAVPBjd3Z9SqTJum23jLnHvoMOOlPLWF2sG9jowIeMDIaSJraAVHeBKcqEFGBJ2gE4z2wxXz7FUpLJQpOTezi9u2LfHF2Xy8GTv184HicfRADR3TjQI0ohtBjtLzCtA2pIzNHoyqNk1W6BQWNq-hip" />
               </div>
@@ -100,7 +102,7 @@ export default function Home() {
             </div>
 
             {/* Project 4 */}
-            <div className="md:col-span-8 group bg-surface-white p-lg rounded-xl border border-outline-variant shadow-md hover:shadow-xl transition-all hover:-translate-y-1">
+            <div onClick={() => alert('Project coming soon!')} className="cursor-pointer md:col-span-8 group bg-surface-white p-lg rounded-xl border border-outline-variant shadow-md hover:shadow-xl transition-all hover:-translate-y-1">
               <div className="relative overflow-hidden rounded-lg aspect-video mb-lg">
                 <img className="w-full h-full object-cover transition-transform group-hover:scale-105 duration-500" alt="Urban Canvas" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALuP0bf88XF1b6uWB864faZJTOX2o31j0opj8DE8rg0Xl_ylYTTXRhxBM_3E3cK1ztYk0VWOOKKsPSGRSRBcL0oxn1864T8SgTPJT6tjR6sBNVKSYo9icotips_NFcL8lxV41iYV5LZUhEFA8SX4bqj_V7KciZGsLpKQEUhiuZ1cI4Vt29RKYWABC4tUF1BdUYo0p5Owl2zYk_54xhNtJkuNyzrwa0AzpGRPBQwrRPl-s8HsRfxSwvx44egzMPN2TjZbZPGLC1h3u0" />
               </div>
@@ -150,6 +152,7 @@ export default function Home() {
             <Link className="text-secondary font-headline text-subhead border-b border-secondary" href="/blog">View all notes</Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-xl">
+            <Link href="/blog/the-joy-of-coding" className="block">
             <article className="bg-surface-raised p-xl rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-all">
               <div className="text-caption text-secondary font-bold mb-sm">OCT 24, 2023</div>
               <h3 className="font-headline text-subhead text-on-surface mb-md">Why I still carry a physical notebook</h3>
@@ -159,6 +162,8 @@ export default function Home() {
                 <span className="material-symbols-outlined text-sm">trending_flat</span>
               </div>
             </article>
+            </Link>
+            <Link href="/blog/the-joy-of-coding" className="block">
             <article className="bg-surface-raised p-xl rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-all">
               <div className="text-caption text-secondary font-bold mb-sm">SEP 12, 2023</div>
               <h3 className="font-headline text-subhead text-on-surface mb-md">The beauty of CSS Grid for layouts</h3>
@@ -168,6 +173,8 @@ export default function Home() {
                 <span className="material-symbols-outlined text-sm">trending_flat</span>
               </div>
             </article>
+            </Link>
+            <Link href="/blog/the-joy-of-coding" className="block">
             <article className="bg-surface-raised p-xl rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-all">
               <div className="text-caption text-secondary font-bold mb-sm">AUG 05, 2023</div>
               <h3 className="font-headline text-subhead text-on-surface mb-md">Debugging with a cup of chamomile</h3>
@@ -177,6 +184,7 @@ export default function Home() {
                 <span className="material-symbols-outlined text-sm">trending_flat</span>
               </div>
             </article>
+            </Link>
           </div>
         </section>
       </main>

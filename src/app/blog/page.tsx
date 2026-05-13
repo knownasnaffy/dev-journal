@@ -1,3 +1,5 @@
+"use client";
+
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import Link from 'next/link';
@@ -104,7 +106,7 @@ export default function Blog() {
       </main>
 
       {/* FAB for quick action */}
-      <button className="fixed bottom-xl right-xl w-14 h-14 bg-primary text-on-primary rounded-full shadow-[0_12px_24px_rgba(41,37,36,0.14),0_4px_8px_rgba(41,37,36,0.06)] hover:scale-110 active:scale-95 transition-all flex items-center justify-center z-50">
+      <button onClick={() => alert('Create new note coming soon!')} className="fixed bottom-xl right-xl w-14 h-14 bg-primary text-on-primary rounded-full shadow-[0_12px_24px_rgba(41,37,36,0.14),0_4px_8px_rgba(41,37,36,0.06)] hover:scale-110 active:scale-95 transition-all flex items-center justify-center z-50">
         <span className="material-symbols-outlined text-[28px]">edit</span>
       </button>
 

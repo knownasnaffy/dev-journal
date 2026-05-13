@@ -1,5 +1,8 @@
+"use client";
+
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import Link from 'next/link';
 
 export default function BlogPost() {
   return (
@@ -24,7 +27,7 @@ export default function BlogPost() {
 
             {/* Heart Action */}
             <div className="flex justify-end mb-xl">
-              <button className="flex items-center gap-sm bg-surface-container-low px-lg py-md rounded-full border-2 border-primary-container text-primary hover:bg-primary-container hover:text-on-primary-container transition-all cursor-pointer active:scale-95">
+              <button onClick={() => alert('Added to favorites!')} className="flex items-center gap-sm bg-surface-container-low px-lg py-md rounded-full border-2 border-primary-container text-primary hover:bg-primary-container hover:text-on-primary-container transition-all cursor-pointer active:scale-95">
                 <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>favorite</span>
                 <span className="font-body font-bold">248 Favorites</span>
               </button>
@@ -71,6 +74,7 @@ export default function BlogPost() {
               <h3 className="font-headline text-headline text-on-surface mb-lg">Related Notes</h3>
               <div className="space-y-lg">
                 {/* Card 1 */}
+                <Link href="/blog/the-joy-of-coding" className="block">
                 <div className="bg-surface-white p-lg rounded-xl shadow-sm border-2 border-surface-container-high hover:-translate-y-1 hover:shadow-md transition-all cursor-pointer scrapbook-rotation-2">
                   <img
                     className="w-full h-32 object-cover rounded-lg mb-md"
@@ -80,8 +84,10 @@ export default function BlogPost() {
                   <h4 className="font-headline text-subhead text-primary">Mastering the Pastel Palette</h4>
                   <p className="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">How to use high-transparency tints to create a gentle UI experience.</p>
                 </div>
+                </Link>
 
                 {/* Card 2 */}
+                <Link href="/blog/the-joy-of-coding" className="block">
                 <div className="bg-surface-white p-lg rounded-xl shadow-sm border-2 border-surface-container-high hover:-translate-y-1 hover:shadow-md transition-all cursor-pointer -rotate-1">
                   <img
                     className="w-full h-32 object-cover rounded-lg mb-md"
@@ -91,6 +97,7 @@ export default function BlogPost() {
                   <h4 className="font-headline text-subhead text-primary">The Logic of Elevation</h4>
                   <p className="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Understanding ambient shadows and paper-like layering in digital products.</p>
                 </div>
+                </Link>
               </div>
             </div>
 
@@ -103,7 +110,7 @@ export default function BlogPost() {
                   placeholder="your@email.com"
                   type="email"
                 />
-                <button className="w-full bg-primary text-on-primary font-bold py-md rounded-lg shadow-sm hover:translate-y-[-2px] transition-all cursor-pointer">
+                <button onClick={(e) => { e.preventDefault(); alert('Subscribed!'); }} className="w-full bg-primary text-on-primary font-bold py-md rounded-lg shadow-sm hover:translate-y-[-2px] transition-all cursor-pointer">
                   Subscribe
                 </button>
               </div>
