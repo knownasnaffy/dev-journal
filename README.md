@@ -1,6 +1,6 @@
 <img width="1817" height="909" alt="Dev Journal" src="https://github.com/user-attachments/assets/ea5c76fc-aecb-4e6c-b280-105ecb14330e" />
 
-# Dev Journal — A Soft, Pastel Portfolio Template
+# Dev Journal - A Soft, Pastel Portfolio Template
 
 Dev Journal is a beautifully crafted demo portfolio website with a clean, light aesthetic. It’s a lovely starting point for anyone who wants a calm, modern, and stylish pastel-themed web presence.
 
@@ -9,7 +9,7 @@ Dev Journal is a beautifully crafted demo portfolio website with a clean, light 
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) v18 or later
-- A package manager — [Bun](https://bun.sh/) was used throughout development and is recommended, though npm, pnpm, or yarn will also work
+- A package manager - [Bun](https://bun.sh/) was used throughout development and is recommended, though npm, pnpm, or yarn will also work
 
 ### Setup
 
