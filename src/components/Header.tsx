@@ -8,14 +8,14 @@ export function Header() {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const linkBaseClass = "font-headline text-subhead hover:scale-105 hover:rotate-1 transition-transform duration-200";
+  const linkBaseClass = "font-headline text-subhead hover:scale-105 hover:rotate-1 transition-transform duration-200 w-fit";
   const activeClass = "text-primary font-bold border-b-2 border-dashed border-primary py-1";
   const inactiveClass = "text-on-surface-variant hover:text-primary transition-colors";
 
   return (
     <nav className="w-full relative z-50 top-0 px-xl py-lg bg-surface-raised border-b border-dashed border-outline-variant">
       <div className="flex justify-between items-center max-w-7xl mx-auto w-full">
-        <Link href="/" className="font-display text-display text-primary rotate-[-2deg] cursor-pointer">
+        <Link href="/" className="font-display text-4xl font-extrabold md:text-display text-primary rotate-[-2deg] cursor-pointer">
           DevJournal
         </Link>
         <div className="hidden md:flex gap-xl items-center">
@@ -32,7 +32,7 @@ export function Header() {
             <Github/>
           </a>
         </div>
-        <div className="md:hidden">
+        <div className="md:hidden h-fit">
           <span onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="material-symbols-outlined text-primary text-3xl cursor-pointer select-none">
             {isMobileMenuOpen ? 'close' : 'menu'}
           </span>
@@ -40,7 +40,7 @@ export function Header() {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-surface-white border-b border-dashed border-outline-variant shadow-md flex flex-col p-lg gap-lg z-50">
+        <div className="md:hidden absolute top-full left-0 w-full bg-surface-raised border-b border-dashed border-outline-variant shadow-md flex flex-col px-6 pb-6 pt-3 gap-lg z-50">
           <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className={`${linkBaseClass} ${pathname === '/' ? activeClass : inactiveClass}`}>
             Home
           </Link>
@@ -50,9 +50,8 @@ export function Header() {
           <Link href="/say-hello" onClick={() => setIsMobileMenuOpen(false)} className={`${linkBaseClass} ${pathname === '/say-hello' ? activeClass : inactiveClass}`}>
             Say Hello
           </Link>
-          <a href="https://github.com/knownasnaffy" target="_blank" rel="noopener noreferrer" className="flex items-center gap-xs">
+          <a href="https://github.com/knownasnaffy" target="_blank" rel="noopener noreferrer" className="my-2">
             <Github/>
-            <span className={`${linkBaseClass} ${inactiveClass}`}>GitHub</span>
           </a>
         </div>
       )}
