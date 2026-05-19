@@ -2,7 +2,7 @@
 
 # Dev Journal - A Soft, Pastel Portfolio Template
 
-Dev Journal is a beautifully crafted demo portfolio website with a clean, light aesthetic. It’s a lovely starting point for anyone who wants a calm, modern, and stylish pastel-themed web presence.
+Dev Journal is a beautifully crafted demo portfolio website with a clean, light aesthetic. It’s a lovely starting point for anyone who wants a calm, modern, and stylish pastel-themed web presence. Checkout the [live demo](http://dev-journal.barinr.xyz/)!
 
 ## Development
 
@@ -41,7 +41,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 
 ## Contributing
 
-Contributions are welcome! Feel free to open an issue to report a bug or suggest an improvement, or submit a pull request with your changes. Since this is a demo project there are no strict contribution guidelines — just keep changes focused and descriptive.
+Contributions are welcome! Feel free to open an issue to report a bug or suggest an improvement, or submit a pull request with your changes. Since this is a demo project there are no strict contribution guidelines, just keep changes focused and descriptive.
 
 ## License
 
